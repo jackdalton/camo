@@ -26,6 +26,7 @@ gui.add(controls, "height", 1, 2000);
 gui.add(controls, "squareSize", 5, 100);
 gui.add(controls, "regenerate");
 
+gui.__folders.Colors.open();
 generateCamo();
 
 gui.onChange = function(fn) {
@@ -42,7 +43,7 @@ gui.onChange(generateCamo);
 
 function generateCamo() {
     var squareSize = controls.squareSize;
-    
+
     canvas.width = controls.width;
     canvas.height = controls.height;
 
